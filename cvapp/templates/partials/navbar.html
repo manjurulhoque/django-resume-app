@@ -15,8 +15,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li {% if request.resolver_match.url_name == '/' %}class="active"{% endif %}><a href="#">Home</a></li>
-                {# <li><a href="{% url 'posts.create' %}">Create Post</a></li>#}
+                <li {% if request.resolver_match.url_name == '/' %}class="active"{% endif %}><a href="/">Home</a></li>
+                <li><a href="{% url 'create_resume' %}">Create Resume</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {# <li><a href="{% url 'login' %}">Login</a></li>#}

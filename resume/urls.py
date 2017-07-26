@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name="index"),
     url(r'^create$', views.create_resume, name="create_resume"),
+    url(r'^pdf$', views.some_view),
 ]

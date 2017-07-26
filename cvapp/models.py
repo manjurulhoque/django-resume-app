@@ -15,7 +15,7 @@ class PersonalInfo(models.Model):
     email = models.EmailField(max_length=254)
     cgpa = models.FloatField()
     birth_day = models.DateField()
-    gender = models.CharField(max_length=6, choices=GENDER_CHOICE)
+    gender = models.CharField(max_length=6)
     nationality = models.CharField(max_length=25)
     phone_no = models.CharField(max_length=14, blank=True)
 

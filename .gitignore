@@ -1,1 +1,4 @@
 cvapp/__pycache__/
+resume/__pycache__/
+__pycache__/
+*.py[cod]

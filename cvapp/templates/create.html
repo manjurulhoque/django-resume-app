@@ -8,7 +8,7 @@
 <div class="assessment-container">
    <div class="row">
        <div class="col-md-6 col-md-offset-2 form-box">
-           <form role="form" class="registration-form" action="javascript:void(0);">
+           <form role="form" method="post" class="registration-form" action="{% url 'create_resume' %}">
                <fieldset>
                    <div class="form-top">
                        <div class="form-top-left">
@@ -21,10 +21,10 @@
                    <div class="form-bottom">
                        <div class="row">
                            <div class="form-group col-md-6 col-sm-6">
-                               <input type="text" class="form-control" placeholder="First name" id="first_name">
+                               <input type="text" name="first_name" class="form-control" placeholder="First name" id="first_name">
                            </div>
                            <div class="form-group col-md-6 col-sm-6">
-                               <input type="text" class="form-control" placeholder="Last name" id="last_name">
+                               <input type="text" name="last_name" class="form-control" placeholder="Last name" id="last_name">
                            </div>
                        </div>
                        <div class="form-group">
@@ -146,6 +146,7 @@
                        <div class="form-group">
                            <input type="text" name="other_skills" placeholder="Other Skills" class="form-control"  required>
                        </div>
+                       {% csrf_token %}
                        <button type="button" class="btn btn-previous">Previous</button>
                        <button type="submit" class="btn">Submit</button>
                    </div>
